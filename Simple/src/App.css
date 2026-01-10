@@ -1,0 +1,48 @@
+/* Center page */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Counter Card */
+.counter-card {
+  border: 2px solid #e5e7eb;       /* 🔥 BORDER */
+  border-radius: 16px;
+  padding: 32px 40px;
+  background: #ffffff;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.counter-card h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+/* Buttons wrapper */
+.buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* Buttons */
+button {
+  width: 48px;
+  height: 48px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #eef2ff;
+  border-color: #6366f1;
+}
