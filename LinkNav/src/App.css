@@ -1,0 +1,37 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.nav-container button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.nav-container button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.nav-container img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); /* makes icon white */
+}
+
+.page {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+}
