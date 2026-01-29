@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
+// ✅ import image from assets
+import profilePic from "./assets/Profile Pic.jpg";
+
 function Profile() {
   return (
     <div className="page">
       <img
-        src="https://i.pravatar.cc/200?img=12"
+        src={profilePic}
         alt="profile"
         className="profile-pic"
       />
