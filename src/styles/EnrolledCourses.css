@@ -1,0 +1,130 @@
+/* Enrolled Courses Styles */
+.enrolled-container {
+  min-height: calc(100vh - 80px);
+  background: #f8f9fa;
+}
+
+.enrolled-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.enrolled-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.enrolled-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.enrolled-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 5px solid #28a745;
+}
+
+.enrolled-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.enrolled-card.completed-card {
+  border-left-color: #d4af37;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.02) 100%);
+}
+
+.enrolled-card.completed-card .card-title {
+  color: #1a5490;
+}
+
+.enrolled-card .card-body {
+  padding: 1.5rem;
+}
+
+.enrolled-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.enrolled-card .card-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.badge-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.completion-banner {
+  background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+  color: #1a5490;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+}
+
+.completion-banner span {
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-group .btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.alert-link {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alert-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .enrolled-header {
+    padding: 1.5rem;
+  }
+
+  .enrolled-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group .btn {
+    width: 100%;
+    min-width: unset;
+  }
+}
+

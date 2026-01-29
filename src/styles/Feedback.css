@@ -1,0 +1,111 @@
+/* Feedback Styles */
+.feedback-container {
+  min-height: calc(100vh - 80px);
+  background: #f8f9fa;
+}
+
+.feedback-header {
+  background: linear-gradient(135deg, #fd7e14 0%, #ff6b6b 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.feedback-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.feedback-form-card,
+.feedback-list-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-card .card-body,
+.feedback-list-card .card-body {
+  padding: 2rem;
+}
+
+.feedback-form-card h5,
+.feedback-list-card h5 {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.feedback-form-card .form-label {
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-form-card .form-control,
+.feedback-form-card .form-select {
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.feedback-form-card .form-control:focus,
+.feedback-form-card .form-select:focus {
+  border-color: #fd7e14;
+  box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+}
+
+.feedback-form-card .btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.feedback-items {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.feedback-item {
+  padding: 1rem 0;
+}
+
+.feedback-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.feedback-item p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.feedback-item small {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .feedback-header {
+    padding: 1.5rem;
+  }
+
+  .feedback-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .feedback-form-card .card-body,
+  .feedback-list-card .card-body {
+    padding: 1.5rem;
+  }
+}
