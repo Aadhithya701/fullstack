@@ -7,6 +7,10 @@
 <img width="1918" height="829" alt="image" src="https://github.com/user-attachments/assets/58d9207e-e6b8-4d18-8408-f836414a7013" />
 <img width="1909" height="820" alt="image" src="https://github.com/user-attachments/assets/3c54fe8c-34e6-41fc-af59-0efe24b54275" />
 <img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/cd73cd21-1687-4a38-bd55-bebe136a1aca" />
+<img width="1911" height="825" alt="image" src="https://github.com/user-attachments/assets/1785a71d-f883-413c-b695-1a5f59d7fbeb" />
+<img width="970" height="812" alt="image" src="https://github.com/user-attachments/assets/e207e47a-655a-4108-9cba-d1d9d08dbc03" />
+<img width="950" height="822" alt="image" src="https://github.com/user-attachments/assets/a5e9fabd-2a03-4b1d-9dd3-a3b8696aff7a" />
+<img width="1038" height="765" alt="image" src="https://github.com/user-attachments/assets/631f9138-df23-4a48-9da3-2fb9f22cbd12" />
 
 Bootstrap
 Purpose: Demonstrates integrating Vite with Bootstrap to prototype responsive layouts quickly.
@@ -87,3 +91,105 @@ Experiments: Design tokens, CSS variables, and different layout systems (flex vs
 Learnings: How small token systems make theme changes easier; recommended CSS organization strategies.
 Notes: Treat as a design system seed for future component libraries.
 Files of interest: src styles and pattern files.
+
+LazyDashboard: -
+Here is the **theoretical explanation** of your code, using proper React and web-architecture terminology.
+
+---
+
+### Conceptual Overview
+
+The code implements **code splitting via dynamic import** using **`React.lazy()`** and **`Suspense`**, a mechanism that defers component loading to improve **initial load performance**.
+
+---
+
+### 1. Dynamic Module Loading (ES Modules)
+
+```js
+import('./Dashboard.jsx')
+```
+
+This is an **ECMAScript dynamic import**.
+Unlike static imports, it:
+
+* Returns a **Promise**
+* Allows the module to be fetched **at runtime**
+* Enables **bundle splitting** by the build tool (Vite)
+
+As a result, `Dashboard.jsx` is extracted into a **separate JavaScript chunk**.
+
+---
+
+### 2. `React.lazy()` – Deferred Component Resolution
+
+```js
+const LazyDashboard = lazy(() => import('./Dashboard.jsx'))
+```
+
+`React.lazy()` wraps the dynamic import and converts the resolved module into a **lazy React component**.
+
+* The component is **not evaluated during initial render**
+* React waits until the component is actually rendered
+* Internally, React suspends rendering until the Promise resolves
+
+This is an example of **on-demand component hydration**.
+
+---
+
+### 3. `Suspense` – Render Blocking Boundary
+
+```jsx
+<Suspense fallback={<h1>Loading...</h1>}>
+```
+
+`Suspense` acts as a **render boundary**:
+
+* When a lazy component throws a Promise (pending import),
+  React **pauses rendering**
+* The `fallback` UI is rendered instead
+* Once the Promise resolves, React resumes reconciliation
+
+This prevents the UI from breaking during asynchronous loading.
+
+---
+
+ 4. Runtime Behavior
+
+At runtime:
+
+1. Initial bundle loads (`App.jsx`)
+2. `Dashboard.jsx` is **not included**
+3. When `<LazyDashboard />` is encountered:
+
+   * Browser fetches the split chunk
+4. While loading:
+
+   `Suspense` renders fallback
+5. After resolution:
+
+    React mounts `Dashboard`
+
+5. Architectural Benefit
+
+This pattern provides:
+Reduced initial bundle size
+Faster First Contentful Paint (FCP)
+Scalable component architecture
+
+It is most effective for:
+
+Route-level components
+Heavy UI modules
+Feature-based loading
+
+LazyloadSPA: -
+## Description
+
+This experiment demonstrates the implementation of **route-based lazy loading** in a **Single Page Application (SPA)** using React. Instead of loading all components at application startup, components associated with specific routes are loaded **only when the user navigates to those routes**.
+
+The experiment uses **dynamic imports** along with `React.lazy()` and `Suspense` to achieve code splitting at the route level. By integrating lazy loading with **React Router**, the application reduces its initial JavaScript bundle size, resulting in faster load times and improved runtime performance.
+
+This approach enhances scalability by ensuring that unused routes do not contribute to the initial render cost, making it especially effective for large-scale SPAs with multiple pages or feature modules.
+
+---
+
