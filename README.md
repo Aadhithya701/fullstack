@@ -8,9 +8,11 @@
 <img width="1909" height="820" alt="image" src="https://github.com/user-attachments/assets/3c54fe8c-34e6-41fc-af59-0efe24b54275" />
 <img width="1919" height="824" alt="image" src="https://github.com/user-attachments/assets/cd73cd21-1687-4a38-bd55-bebe136a1aca" />
 <img width="1911" height="825" alt="image" src="https://github.com/user-attachments/assets/1785a71d-f883-413c-b695-1a5f59d7fbeb" />
+<img width="1912" height="827" alt="image" src="https://github.com/user-attachments/assets/93de049b-d8ad-4fcf-adfe-543b3dc799d8" />
 <img width="970" height="812" alt="image" src="https://github.com/user-attachments/assets/e207e47a-655a-4108-9cba-d1d9d08dbc03" />
 <img width="950" height="822" alt="image" src="https://github.com/user-attachments/assets/a5e9fabd-2a03-4b1d-9dd3-a3b8696aff7a" />
 <img width="1038" height="765" alt="image" src="https://github.com/user-attachments/assets/631f9138-df23-4a48-9da3-2fb9f22cbd12" />
+<img width="523" height="814" alt="image" src="https://github.com/user-attachments/assets/e2cc9f44-71bb-4194-99b8-794990c9938f" />
 
 Bootstrap
 Purpose: Demonstrates integrating Vite with Bootstrap to prototype responsive layouts quickly.
