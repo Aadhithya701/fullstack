@@ -195,5 +195,40 @@ The experiment uses **dynamic imports** along with `React.lazy()` and `Suspense`
 
 This approach enhances scalability by ensuring that unused routes do not contribute to the initial render cost, making it especially effective for large-scale SPAs with multiple pages or feature modules.
 
+
+## **6.1 Email ID Validation**
+
+In this module, **client-side validation** is applied to the Email ID field to ensure that only correctly formatted email addresses are accepted before form submission.
+The validation logic checks that the email contains **exactly one `@` symbol**, a valid **username**, and a proper **domain name** followed by an accepted **top-level domain** such as `.com`, `.in`, or a valid country code.
+
+Additional constraints are enforced to reject malformed email IDs, such as:
+
+* Emails starting or ending with a dot
+* Consecutive dots in the username
+* Domain-like patterns (`.in`, `.com`) appearing in the local part
+
+If the email format is invalid, an error message is displayed and the form submission is blocked. This ensures correctness of user input and prevents invalid email data from being submitted.
+
 ---
+
+## **6.2 Password Validation**
+
+The password field is validated on the client side to ensure **strong and secure password creation**.
+The validation conditions enforced are:
+
+* The password must **start with a capital letter**
+* It must contain **at least one numeric digit**
+* It must include **at least one special character**
+* The total length must be **a minimum of five characters**
+
+If any of these conditions are not satisfied, an appropriate error message is shown to the user and form submission is prevented.
+This validation improves security by enforcing strong password rules and provides immediate feedback without requiring server-side interaction.
+
+---
+
+### ✅ One-line Result Statement (optional for record)
+
+> Thus, client-side validation for Email ID and Password was successfully implemented using React to ensure valid and secure user input before submission.
+
+
 
