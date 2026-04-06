@@ -227,11 +227,12 @@ This validation improves security by enforcing strong password rules and provide
 ---
 
 ### ✅ One-line Result Statement (optional for record)
-
+EXP 8: -
 > Thus, client-side validation for Email ID and Password was successfully implemented using React to ensure valid and secure user input before submission.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/93fcddf5-22ea-499a-aecc-a4a976fce0b0" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/af04dc8a-2792-4d89-9222-a9fc09b89e7a" />
 <img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/6629f75f-53d2-4706-8326-bebbab2a129f" />
+EXP 9: -
 ****<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f7302ba2-532a-4ab5-9e4a-38cfed2f7271" />
 <img width="1916" height="1009" alt="image" src="https://github.com/user-attachments/assets/1e3768dd-5866-4602-8e74-33dfeec7f4b1" />
 
