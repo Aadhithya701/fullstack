@@ -1,0 +1,62 @@
+/* Center the app */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Red bordered ToDo box */
+.todo-box {
+  border: 3px solid #dc2626; /* 🔴 RED BORDER */
+  border-radius: 16px;
+  padding: 28px 32px;
+  width: 360px;
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.todo-box h1 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Input + button */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.input-row button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #dc2626;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background: #b91c1c;
+}
+
+/* Task list */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

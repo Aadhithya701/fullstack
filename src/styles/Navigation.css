@@ -1,0 +1,47 @@
+/* Navigation Bar Styles */
+.navbar-custom {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: 0.5px;
+}
+
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: white !important;
+}
+
+.navbar-user {
+  color: white;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.navbar-custom .btn {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-custom .nav-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-user {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: block;
+  }
+}
